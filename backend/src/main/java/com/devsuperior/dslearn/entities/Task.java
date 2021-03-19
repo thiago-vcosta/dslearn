@@ -1,5 +1,6 @@
 package com.devsuperior.dslearn.entities;
 
+import java.io.Serializable;
 import java.time.Instant;
 
 import javax.persistence.Column;
@@ -8,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_task")
-public class Task extends Lesson {
+public class Task extends Lesson implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private String description;
