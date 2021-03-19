@@ -99,6 +99,10 @@ public class Offer implements Serializable {
 		return resource;
 	}
 
+	public Set<Topic> getTopics() {
+		return topics;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
